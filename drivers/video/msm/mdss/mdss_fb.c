@@ -48,7 +48,9 @@
 #include <linux/file.h>
 #include <linux/kthread.h>
 #include <linux/dma-buf.h>
-#include "klapse.h"
+#ifdef CONFIG_KLAPSE
+#include <linux/klapse.h>
+#endif
 #include "mdss_fb.h"
 #include "mdss_mdp_splash_logo.h"
 #define CREATE_TRACE_POINTS
